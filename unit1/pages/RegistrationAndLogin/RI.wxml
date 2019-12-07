@@ -1,0 +1,9 @@
+<!--pages/Registration and login/R&I.wxml -->
+<view id="Maintitle">欢迎使用</view>
+<view id="Secondtitle">后勤管理系统</view>
+
+<button id="log" type="primary" bindtap="register">注册</button>
+
+<button id="in" bindtap="login">登陆</button>
+
+<image src="https://6d69-miniappk0714-1300646298.tcb.qcloud.la/PIC/timg.jpg?sign=01c42f7be3e74976f85f86758bc7c20f&t=1575531675"></image>

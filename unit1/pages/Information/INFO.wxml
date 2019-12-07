@@ -1,0 +1,67 @@
+<!--pages/Information/INFO.wxml-->
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0?'on':''}}" data-current="0" bindtap="swichNav">填写信息</view>
+  <view class="swiper-tab-list {{currentTab==1?'on':''}}" data-current="1" bindtap="swichNav">查看维修记录</view>
+</view>
+
+<swiper current="{{currentTab}}" duration="300" style="height:{{winHeight+50}}px" bindchange="bindChange">
+	<swiper-item>	
+		<form bindsubmit="formBindsubmit" bindreset="formReset">	
+			<!--填写信息-->
+					<view id="title">请填写相应信息</view>
+			<!-- 填写宿舍区*/ -->
+				<view id="Qu" style="display:flex">
+					<label class="zi">宿舍区：</label>
+					<input type="text" class="input" placeholder-style="color:gray" placeholder="（男，女），（宿舍楼）"></input>
+				</view>
+				<view>-----------------------</view>
+			<!-- 填写宿舍号 -->
+				<view id="Hao" style="display:flex">
+					<view class="zi">输入宿舍号：</view>
+					<input class="input" placeholder="请输入宿舍号"></input>
+				</view>
+				<view>-----------------------</view>
+			<!-- 填写联系方式 -->
+				<view id="Phone" style="display:flex">
+					<view class="zi">输入联系方式：</view>
+					<input class="input" placeholder="请输入联系方式" type="number"></input>
+				</view>
+				<view>-----------------------</view>
+			<!-- 选择日期 -->
+				<view class="section">
+  					<view class="section__title">选择日期</view>
+ 						<picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+    					<view class="picker">
+     					 当前选择: {{date}}
+    					</view>
+  					</picker>
+				</view>
+				<view>-----------------------</view>
+			<!-- 选择时间 -->
+				<view class="section">
+ 					<view class="section__title">选择时间</view>
+  					<picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+   						<view class="picker">当前选择: {{time}}</view>
+  					</picker>
+				</view>
+				<view>-----------------------</view>
+			<!-- 输入问题描述 -->
+				<view>
+					<view class="zi">输入问题：</view>
+					<textarea id="Question" placeholder="请输入问题描述" style="height:100rpx"></textarea>
+				</view>
+				<view>-----------------------</view>
+		</form>
+			
+	<!-- 确认按钮 -->
+		<button id="submit" form-type="submit">提交</button>
+	<!-- 重置按钮 -->
+		<button id="reset" form-type="reset" value="重置">重置</button>
+	</swiper-item>
+
+<!--查看维修记录-->
+<swiper-item>
+	<view>nothing</view>
+</swiper-item>
+
+</swiper>

@@ -1,0 +1,22 @@
+/* pages/RegistrationAndLogin/R&I.wxss */
+#Maintitle{
+	text-align: center;
+	font-size: 50rpx;
+}
+#Secondtitle{
+	text-align: center;
+	font-size: 45rpx;
+}
+#log{
+	align-content: center;
+	position: fixed;
+	bottom: 100rpx;
+	height: 100rpx;
+	width: 100%;
+}
+#in{
+	position: fixed;
+	bottom: 0;
+	height: 100rpx;
+	width: 100%;
+}

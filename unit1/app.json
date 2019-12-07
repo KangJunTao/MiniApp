@@ -1,0 +1,17 @@
+{
+	"pages": [
+		"pages/RegistrationAndLogin/RI",
+		"pages/Registration/Zhuce",
+		"pages/StudentRegister/Student",
+		"pages/Information/INFO",
+		"pages/Table/Table"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "中北大学维修后勤",
+		"navigationBarTextStyle": "black"
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json"
+}

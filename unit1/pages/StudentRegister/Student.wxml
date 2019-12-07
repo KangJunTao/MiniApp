@@ -1,0 +1,3 @@
+<!--pages/StudentRegister/Student.wxml-->
+<text>pages/StudentRegister/Student.wxml</text>
+<button bindtap="pages/Information/INFO">wancheng </button>
